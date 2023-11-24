@@ -18,12 +18,14 @@
 //      + Eso quiere decir que incluso una función puede ser un valor en una clave
 // * Investiga sobre la libreria Math de javascript, te permitirá crear un valor aleatorio 0 o 1
 
-const juegos = {
+const juegos = {    
     aguila: 0,
     sol: 1,
-    tirarMoneda: undefined
+    tirarMoneda:undefined     
 }
 
 for (let tiros = 0; tiros < 10; tiros++) {
-    // juegos.tirarMoneda()
+   juegos.tirarMoneda=Math.floor(Math.random()*2);
+     resulta = (juegos.tirarMoneda==0) ? "Cae águila 🦅" : "Cae sol 🌞";
+ console.log(resulta)
 }

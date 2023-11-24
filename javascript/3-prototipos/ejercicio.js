@@ -12,14 +12,18 @@
 */
 
 // Constructor de Objetos "Grupo"
-function Grupo(nombre, personas) {
-
+function Grupo(nombre,personas) {
+    this.nombre=String
+    this.personas=[]
 }
-
 const magios = new Grupo("Magios", ["Eduardo", "Carla", "Marcos", "Emmanuel", "Samara", "Paulina", "María", "Julio", "Alex", "Pedro", "Guillermo", "Hernán", "Eliot", "Israel", "Lucía"])
 
+Grupo.prototype.mostrarResumen= function() {console.log ('this.nombre $ {this.personas}')}
+Grupo.prototype.agregarPersona= function(Person) {new Grupo("Magios",["Manuel"])}
+
+magios.mostrarResumen()
 // magios.mostrarResumen()
-// magios.agregarPersona("Manuel")
-// magios.agregarPersona("Irma")
-// magios.agregarPersona("Carlos")
-// magios.mostrarResumen()
+ magios.agregarPersona("Manuel")
+ magios.agregarPersona("Irma")
+ magios.agregarPersona("Carlos")
+ magios.mostrarResumen()
